@@ -1,45 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-</head>
-<body>
-<form action="curriculo.php" method="POST">
-<fieldset>
-<legend>Curriculo</legend>
-<fieldset>
-<legend>Dados Pessoais</legend>
-<p>Nome:<input type="text" name="nome" required></p></br>
-<p>Telefone:<input type="text" name="telefone" required></p></br>
-<p>Email:<input type="email" name="email" required> </p></br>
-<p>Endereço:<input type="text" name="endereco"required></p></br>
-</fieldset>
-<fieldset>
-<legend>Escolaridade</legend>
-Ensino Fundamental Completo<input type="checkbox" name="efc"></br>
-Ensino Medio Completo<input type="checkbox" name="emc"></br>
-Ensino Superior Completo<input type="checkbox" name="esc"></br>
-Pos-Graduação completo<input type="checkbox" name="pgc"></br>
-Mestrado Completo<input type="checkbox" name="mc"></br>
-</fieldset>
-<fieldset>
-<legend>Experiencia Profissional</legend>
-<p>Empresa:<input type="text" name="empresa" required></p></br>
-<p>Data de Admissao:<input type="date" name="data_admissao" required></p></br>
-<p>Data de Demissão:<input type="date" name="data_demissao" required></p></br>
-<p>Atividade exercida: <input type="text" name="atividade_exercida" required></p></br>
-</fieldset>
-<fieldset>
-<legend>Cursos e Idiomas</legend>
-<p>Descricao:<input type="text" name="descricao" required></p></br>
-<p>Horas:<input type="text" name="horas" required></p></br>
-<p>Ano de conclusao: <input type="date" name="ano_conclusao" required></p></br>
-</fieldset>
-<fieldset>
-<legend>Informaçoes adicionais</legend>
-<p>Informações Adicionais: <input type="text" name="informacoes" required></p></br>
-</fieldset>
-<input type="submit" value="Cadastrar">
-</fieldset>
-</form>
-</body>
+<html lang="pt-br">              
+    <head>
+        <title>sintaxe basica</title>
+        <link rel="stylesheet" type="text/css">
+        <script src="jquery.js"></script>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <form action="curriculo.php" method="POST">
+            <fieldset>
+                <legend>Curriculo</legend>
+                Nome Completo:<input type="text" minlength="8" maxlength="30" placeholder="nome Completo"  required></br>
+                Telefone: <input type="number" minlength="11" maxlength="15"  placeholder="telefone" required></br>
+                data de nascimento: <input type="date" minlength="2" maxlength="4" placeholder="data de nascimento"  required></br>
+                Email: <input type="email" minlength="10" maxlength="40" placeholder="Email"  required></br>
+                Genero: Masculino: <input type="checkbox" > Feminino: <input type="checkbox" > GAY: <input type="checkbox" > Lesbica: <input type="checkbox" > Não indentificado: <input type="checkbox" > </br>
+
+                inormações adicionais </br>
+                <textarea></textarea>
+               
+                <input type="submit" value="Joao">
+            </fieldset>
+        </form>
+    </body>
 </html>
